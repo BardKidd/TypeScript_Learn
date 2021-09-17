@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Arial, "微軟正黑體", sans-serif;
+      }
+      .waifuBG {
+        position: absolute;
+        background-image: url("./Img/D2GUMYSUwAAGiof.png");
+        width: 100%;
+        height: 100vh;
+        z-index: 1;
+        opacity: 0.3;
+        background-size: cover;
+      }
+      .container {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        z-index: 99;
+      }
+      .container .calc {
+        width: 50%;
+        height: auto;
+        margin: 0 auto;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+      }
+      h1 {
+        font-size: 2.5rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      #calcAnswer {
+        font-size: 1.6rem;
+        font-weight: bold;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="waifuBG"></section>
+    <section class="container">
+      <h1>Hi，請開 DevTools 觀看。</h1>
+      <div class="calc">
+        <input type="number" id="num1" placeholder="Say something..." />
+        <input type="number" id="num2" placeholder="Say something..." />
+        <button class="button">點我計算!!</button>
+        <p id="calcAnswer"></p>
+      </div>
+    </section>
+  </body>
+  <script src="_typeLearn.js"></script>
+</html>
